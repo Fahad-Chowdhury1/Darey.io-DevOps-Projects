@@ -73,7 +73,7 @@ Please see attached my account already logged into Github with repository alread
 
 AWS Account Creation
 
-![AWS_Account_Creation_Process](AWS_Account_Creation.png)
+![AWS_Account_Creation_Process](AWS_Account_Cr.eation.png)
 
 ![AWS_Account_Creation_Plan](Account_Plan_AWS.png)
 
