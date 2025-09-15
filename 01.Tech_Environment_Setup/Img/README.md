@@ -43,6 +43,10 @@ And finally an a showcase of GIT running on my PC
 
 ![Git Application Running](Git_Bash_Application_Running.png)
 
+Also Git Version Verified
+
+![Git_Version_Verification_Command](Git_Version_Verified.png)
+
 ---
 
 ### Virtual box Ubuntu windows installation
