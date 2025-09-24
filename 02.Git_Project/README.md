@@ -52,4 +52,43 @@ Checking Git Status to see changes ready to be comitted.
 
 Seeing the file name in green within the terminal confirms that the file has been successfully staged, making it ready for the next step, which is committing these changes to the project's history.
 
-![comitting_Toms_Changes](img/)
+![comitting_Toms_Changes](img/Toms_Git_Commit.png)
+
+Finally i progress to pushing Tom's branch to the GitHub repository.
+![Toms_Git_Push](img/Toms_Git_Push.png)
+
+
+## Jerry's Work
+
+### switching branches
+Firstly i'll switch back from Tom's branch back to the main branch.
+![Main_Branch_Checkout](img/Switching_To_Main_Branch.png)
+
+### Pulling changes from another branch
+
+I then proceed to pull the latest changes from Toms branch with the Git Pull command.
+![Git_Pull_origin](img/Jerrys_Git_Pull_Origin.png)
+
+
+### Creating New Branch
+I then proceed to create a new branch for Jerry's own work under "add-contact-info"
+![Jerrys_Branch](img/Jerrys_Git_Branch.png)
+
+### Index file changes
+I've opened the index.html file within Jerry's branch and added contact infomation.
+![Jerrys_Contact](img/Jerrys_Task.png)
+
+### Git Add
+I then proceed to "Git Add" jerry's changes made in the index file to prepare them for commit.
+![Jerrys_Git_Add_Index](img/Jerrys_Git_Add.png)
+
+### Git Committing Jerry's changes
+
+After adding Jerrys changes for staging i commit the changes.
+![Jerrys_Commit](img/Jerrys_Git_Commit.png)
+
+### Git Pushing Jerry's Branch
+
+Finally we push Jerry's branch to Github. This command uploads Jerry's branch to the Github repository, making it available for review and merging into the main project.
+
+![Jerrys_Git_Push](img/Jerrys_Git_Push.png)
