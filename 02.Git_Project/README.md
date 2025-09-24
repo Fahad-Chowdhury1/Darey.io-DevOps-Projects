@@ -74,6 +74,9 @@ I then proceed to pull the latest changes from Toms branch with the Git Pull com
 I then proceed to create a new branch for Jerry's own work under "add-contact-info"
 ![Jerrys_Branch](Img/Jerrys_Git_Branch.png)
 
+You can also see the 'Main' & Toms 'Update-Navigation' branch
+![Tom_&_Jerrys_Branch](img/Jerry_And_Toms_Branches.png)
+
 ### Index file changes
 I've opened the index.html file within Jerry's branch and added contact infomation.
 ![Jerrys_Contact](Img/Jerrys_Task.png)
