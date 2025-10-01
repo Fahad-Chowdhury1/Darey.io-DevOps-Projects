@@ -43,3 +43,10 @@ Here is the open request after successfully creating a pull request.
 ### Steps to update Jerry's Branch
 
 Now i'll do the same with Jerry's branch by first navigating to his branch by using the command "git checkout add-contact-info"
+
+![Switching_To_Jarrys_Branch](IMG/Jerrys_Branch.png)
+
+After switching to Jerry's branch i pull all the changes from the main branch using the git pull command.
+
+![Git_Pull_Main_Command](IMG/Jerrys_Git_Pull_Main.png)
+
