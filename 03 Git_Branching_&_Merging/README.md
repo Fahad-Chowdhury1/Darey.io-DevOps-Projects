@@ -50,3 +50,26 @@ After switching to Jerry's branch i pull all the changes from the main branch us
 
 ![Git_Pull_Main_Command](IMG/Jerrys_Git_Pull_Main.png)
 
+---
+
+### Merging Toms Pull Request
+
+Toms pull request now has to be merged so that his changes merge into the main branch.
+
+![Merging_Toms_Pull_Request](IMG/Merging_Toms_Pull_Request.png)
+
+Final Confirmation of the pull request merging.
+![Final_Confirmation](IMG/Final_Confirmation.png)
+
+Confirming merge pull request.
+
+![Merge_Request_Confirmed](IMG/Pull_Request_successfully_Merged.png)
+
+---
+
+### Pushing Jerry's update branch to GitHub
+
+After successfully merging Tom's Pull Request we push Jerry's branch to GitHub.
+![Pushing_Jerrys_Branch](IMG/Git_Push_Jerrys_Contribution.png)
+
+Then the same is done with Jerry's branch, where a pull request is raised same as Toms, and then the pull request is merged into the main branch as done with Tom.
