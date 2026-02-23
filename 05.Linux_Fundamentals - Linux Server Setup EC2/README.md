@@ -40,3 +40,10 @@ Now that i have my remote server up and running i will need a client tool to con
 <br>
 <br>
 
+![MobaX_Installation](IMG/MobaX_Installation.png)
+<br>
+<br>
+<br>
+
+### <U>Connecting Using SSH Command</U>
+Now that i've installed MobaXTerm, i can use an SSH session to connect to the server remotely using the key pair and the IPV4 IP Address for the instance.
