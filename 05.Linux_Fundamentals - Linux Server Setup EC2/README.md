@@ -26,16 +26,22 @@ I have also created a Key Pair which will allow me to connect to the server secu
 <br>
 
 I have also configured the storage and increased it from the base 8GiB to 16GiB
+<br>
+
 ![Storage_Config](IMG/Storage_Config.png)
 <br>
 <br>
 
 After finishing up all my configurations the instance is now ready to be launched. As you can see in the image below, after launching my instance i was notified the instance launch was a success.
+<br>
+
 ![Instance_Launch](IMG/Instance_Launched.png)
 <br>
 <br>
 
 Now that i have my remote server up and running i will need a client tool to connect to the server to communicate to it and give it comnands. I have opted to go with MobaXterm as i am using Windows 11.
+<br>
+
 ![Client_Tool](IMG/Client_Tool.png)
 <br>
 <br>
@@ -47,3 +53,53 @@ Now that i have my remote server up and running i will need a client tool to con
 
 ### <U>Connecting Using SSH Command</U>
 Now that i've installed MobaXTerm, i can use an SSH session to connect to the server remotely using the key pair and the IPV4 IP Address for the instance.
+<br>
+
+![SSH_Session](IMG/SSH_Client_Session.png)
+<br>
+<br>
+<br>
+
+Now that i've inserted my Private Key and the IP address of the server i am able to successfully create a remote session to the server where i am prompted for a username. After inserting my userame i have connected to the session.
+<br>
+
+![Connection_Complete](IMG/Successful_Server_Connection.png)
+<br>
+<br>
+<br>
+
+### <u>Installing, Updating and Removing Software</u>
+My first step before installing new software or updating existing packages was to refresh the package lists for Debian based systems.
+<br>
+
+![Debian_Packages](IMG/Debian_Packages.png)
+<br>
+<br>
+
+#### <u>Installation of Software Packages</u>
+My next step is going to be to install a command called 'tree', this command is used to visually see the file system structure on a linux server. I will do this by using the command line 'sudo apt install tree'
+<br>
+
+![Tree_Package](IMG/Tree_Software_Package.png)
+<br>
+<br>
+<br>
+
+#### <u>Installed Package Verification</u>
+To confirm that the tree command has been installed correctly, i will use the tree command to specify the path i want to see and the tree structure.
+![Tree_Command_Line](IMG/Tree_Command.png)
+<br>
+<br>
+
+#### <u>Updating Installed Packages</u>
+To ensure my systems are up to date i will run the command line 'sudo apt upgrade' that will insure installed packages are up to date and if not then the system will install the necessary upgrades.
+![Sudo_Upgrade](IMG/Sudo_Upgrade.png)
+<br>
+<br>
+<br>
+
+#### <u>Removing Software Packages</u>
+Earlier I installed the 'tree' package, i will run the command line 'sudo apt remove tree' to uninstall the software package.
+![Uninstallation_of_Tree](IMG/Package_Removal.png)
+
+
