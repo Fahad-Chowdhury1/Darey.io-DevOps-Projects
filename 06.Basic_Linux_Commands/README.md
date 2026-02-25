@@ -72,6 +72,41 @@ with the pwd command i will retrieve the 'absolute path'
 
 ![pwd_family](IMG/pwd_family.png)
 
+### <u>ls command</u>
+
+if i wanted to see other directories' contents i could potentially type the ls command followed by desired path, for example 'ls /home/ubuntu' this would show me all the files and directories within 'ubuntu'
+
+![ls_Navigation](IMG/ls_Desired_Path.png)
+
+### <u>cat command</u>
+
+The 'cat' command is one of the most frequently used Linux commands, it lists, combines and writes file content to the terminal console. Below i will run a 'cat' example command followed by the file name and it's extention.
+
+![Cat_Command](IMG/cat_command.png)
+
+As you can see above the command line displays teh content of 'os-release' file in the '/etc/' directory
+
+
+### <u>Touch Command</u>
+The touch command allows me to create an empty file, for example if i use the touch command i can create an html or an empty txt file.
+
+![File_Creation](IMG/Touch_Command.png)
+
+
+
+### <u>cp command</u>
+
+The 'cp' command is used to copy files or directories and their content, see the example below.
+
+![CP_Command](IMG/cp_Command.png)
+
+copying multiple files to a directory - This can be done by entering the file names followed by the destination directory.
+
+![Multiple_Files](IMG/Copying_Multiple_Files.png)
+
+If i wanted to copy the contents of file A to a new file B within the same directory i would use the 'cp' command followed by the source file and destination file.
+
+![Copy_Pasting](IMG/File_Contents.png)
 
 
 
