@@ -108,7 +108,11 @@ If i wanted to copy the contents of file A to a new file B within the same direc
 
 ![Copy_Pasting](IMG/File_Contents.png)
 
+### <u>mv Command</u>
 
+The move command allows me to move and rename files and directories to my destination directory. Below you will see me move the 'photos' directory from root to the 'usr' directory.
+
+![MV_Command](IMG/MV_Command.png)
 
 
 
