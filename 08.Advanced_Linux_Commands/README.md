@@ -25,7 +25,7 @@ Others: Everyone else on the system who doesn't fit the first two roles.
 In permission strings, a hyphen isn't a user type, it’s a placeholder. It simply indicates a lack of permission, showing exactly where access has been restricted.
 
 
-### <u>Example commands</u>
+## <u>Example commands</u>
 
 I'm going to get a bit practical with examples using the ls -latr command.
 
@@ -35,7 +35,7 @@ In the terminal output above you can notice the first characters either being a 
 
 You'll also notice letters like 'r' and 'w' and 'x' these stand for "read, write and execute" if a permission is not granted in place of these characters you will only see a hyphen (-)
 
-### <u> File Permission Command</u>
+## <u> File Permission Command</u>
 To manage file permissions and ownership, Linux provides Several commands:
 
 #### chmod command - 
@@ -112,7 +112,7 @@ if i want to exit superuser i simply just have to type 'exit' in the terminal an
 <br>
 
 
-### <u>User Management on Linux</u>
+## <u>User Management on Linux</u>
 
 As a devops engineer i am also going ot be doing systems administration which involves managing diffrent users on the servers. So it's important i know how to create a new user, or group, modify their permissions, update password and such similar tasks.
 
@@ -127,6 +127,100 @@ As you can see above, after creating the user i was prompted to enter and confir
 ![Changing_User](IMG/Changing_User.png)
 
 
+#### <u>Granting Admin Privileges</u>
+So by default new created user accounts do not have admin privileges. So in this instance i will grant my new user 'john' access to admin privileges by adding him to his user to the 'sudo' group. As you well know users in the sudo group can run commands with admin privileges. I will accomplish this by running the command 'sudo usermod -aG sudo john'
+
+
+![Granting_John_Admin](IMG/Granting_Admin_Privs.png)
+
+to break down the command line i used, 'usermod' is a command that modifies the users account properties.
+
+-a stands for 'append' and is used to add the user to teh spcified group(s) without removing them from other groups they may already belong to.
+
+-G stands for 'supplementary groups' it specifies the grtoups to which the user should be added or modified to.
+
+#### <u>Switching User Accounts</u>
+
+Now that i've created John as a user and given him admin privileges i will log out of my own account and log in as john. I can do this on the terminal by using the 'su' command line, this is used to switch to another user account followed by the username, in this instance the username is 'john'
+
+So for example the command i will run is 'su john'.
+
+![Switching_to_John](IMG/Changing_Accounts.png)
+
+As you can see above, the terminal has changed from 'fahad@fahad' to 'john@fahad'
+
+## <u>Modifying User Accounts</u>
+
+#### <u>Changing User Password</u>
+
+I'm going to now change the password for the user, this will be accomplished by running the 'passwd' command followed by the username.
+
+My command will look something like this: 'sudo passwd john'
+
+
+![Password_Change](IMG/Password_Change.png)
+
+
+#### <u>Creating a Group</u>
+
+To create a new group i'll be using the 'groupadd' command to create a group called 'developers'
+
+![Group_Creation](IMG/Creating_A_Group.png)
+
+#### <u>Adding Users to the Group</u>
+Using the 'usermod' command i'll be able to add users to the group. For example, to add the user i created earlier 'john' and a new user i will create called 'jane' i will add them both to the developers group using the command line below:
+
+sudo usermod -aG developers john
+sudo usermod -aG developers jane
+
+
+![Jane_John_Group](IMG/Adding_Users_to_Group.png)
+
+#### <u>Verifying Group Memberships</u>
+To confirm john & jane's group i will verify it by using the 'id' command, this command will check the group memberships for the users.
+
+![Group_Verification](IMG/Group_Verification.png)
+
+As you can see above, both john and jane are within the 'developers' group.
+
+
+#### <u>Deleting a User</u>
+
+To delete a user i'll be running the command line 'sudo userdel jane'
+
+![User_Deletion](IMG/User_Deletion.png)
+
+As you can see above, i deleted the user 'jane' and then ran the id command to verify she does not exist as a user anymore.
+
+
+#### <u>Ensuring Proper Group Permissions</u>
+
+Groups in linux are used to manage permissions for files and directories, i will ensure that the relevant files or directories have the appropriate group ownership and permissions. In this example i will be granting the 'developers' group ownership of a directory.
+
+This will be done using the command 'sudo chown :developers /path/to/directory'
+
+![Group_Permissions](IMG/Group_Permissions.png)
+
+Now to grant read and write permissions to the group i'll run the command
+'sudo chmod g+rw /home/DevOps'
+
+![Read_Write_Privs](IMG/Read_Write_Privs.png)
+
+As you can see i ran the command to give the group Read + Write to the directory and verified it using the 'ls -ld' command.
+
+Task:
+
+Create a group on the server named 'devops'
+
+![Group_DevOps](IMG/DevOps_Group.png)
+
+Create 5 users: mary, mohammed, ravi, tunji, sofia and ensure they belong to the 'devops' group.
+
+![User_Group_Additions](IMG/User_Task_Creation.png)
+
+Create a folder for each user in the '/home' directory and ensure that each folders group ownership is under 'devops'
+
+![Directory_Groups](IMG/Directory_Groups.png)
 
 
 
