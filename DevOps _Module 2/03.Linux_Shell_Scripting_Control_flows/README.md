@@ -87,7 +87,7 @@ if [ condition ]; then
     commands
 fi
 
-<br>if:</b> This keyword starts the conditonal statement.
+<b>if:</b> This keyword starts the conditonal statement.
 
 <b> [ condition ]:</b> The condition to evaluate. Brackets[] are used to enclose the condition being tested.
 
@@ -122,5 +122,67 @@ elif [ condition2 ]; then
 commands2
 
 fi
+
+
+![elif_Command](IMG/elif_command.png)
+
+<b>elif:</b> This keyword is used right after an 'if' or another 'elif' block. It allows me to specify an alternative condition to test if the previous conditions were false.
+
+<b> [ condition2 ]:</b> The new conditioni want to evaluate. like the 'if' statement, this condition is encloused in square brackets.
+
+<b>then:</b> if the <b>elif</b> condition is true, execute the commands that follow this keyword.
+
+Now i will execute the command again with this new addition to my script.
+
+![Running_Elif](IMG/Running_elif.png)
+
+In this updated version of the script:
+
+The 'if [ $num -gt 0 ]; then part of the script checks if the 'num' is greater than 0 and prints "the number is positive." if true.
+
+If the first condition isn't met, for example a number below 0, the 'elif [ $num -lt 0 ]; then' checks if num is less than 0. If this condition is true, it prints "The number is negative."
+
+This way, the script can differentiate between positive and negative numbers, providing specific feedback based on the value of 'num'
+
+Notice the <b>-lt</b> "less than" operator in the elif section.
+
+### <u>Loops</u>
+
+The <b>for</b> loop has two main forms:
+
+<b>1. List Form:</b> iterates over a list of items:
+
+Here is a basic syntax;
+
+for item in item1 item2 item3; do
+
+echo $item
+
+done
+
+<b>for:</b> This keyword initiates the loop, signaling the start of a block of code that will repeat.
+
+<b>item:</b> This is a variable that temporarily holds the value of each item in the list as the loop iterates. For each iteration of the loop, item takes on the value opf the next item in the list, allowing the commands inside the loop to act on this value.
+
+
+<b>in:</b> The keyword is followed by a list of items that the loop will iterate over. This list can be a series of values, an array, or the output command. The loop excutes once for each item in the list.
+
+
+<u>Task To Complete</u>
+
+1) Create a shell script for each type of the 'for' loop and insert the code in the file.
+
+![Loop_For_Each](IMG/Shell_Script_For_Loops.png)
+
+2) set the correct permission for the scripts.
+
+![Loops_Permission](IMG/Loops_Permission.png)
+
+3) Execute the script and evaluate my experience.
+
+![Loop_Script_Execution](IMG/Executing_Loops.png)
+
+
+
 
 
