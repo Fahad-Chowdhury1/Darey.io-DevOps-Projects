@@ -57,6 +57,11 @@ With a refactored version of the code, i now have the flow like this;
 Breaking the code down:
 
 - !: This is the logical negation operator. it reverses the results of a command, so ! command means "if not".
+
 - commnd -v aws: Thios command checks if the aws command is available in the system. it returns the path to the aws executable. if it exists, or nothing if it doesn't. If i run this on my system, it will tell me the path to the aws cli that i installed previously.
 
+### <u>Summary</u>
 
+In this project, I made the jump from basic scripting to professional-grade cloud automation for DataWise Solutions. I moved away from writing messy, hard-to-read code and started using Shell Functions, which basically let me build reusable "skills" for setting up things like EC2 instances and S3 buckets.
+
+Along the way, I got hands-on with the "gatekeeper" side of Linux—learning how to manage file permissions using chmod +x and using the $# counter to make sure my scripts only run when they have the right instructions. It was a steep learning curve, especially dealing with syntax errors and messy formatting, but it taught me how to build tools that are actually reliable and ready for real-world environments like testing and production.
