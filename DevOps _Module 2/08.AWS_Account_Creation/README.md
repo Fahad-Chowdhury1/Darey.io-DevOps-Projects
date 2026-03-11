@@ -45,7 +45,7 @@ After verification of payment method a one time password (OTP) will be sent to t
 ![Phone_OTP](IMG/Phone_OTP.png)
 
 
-Once my identity has been verified i will then sign up for my plan, in this case will be the "Basic Free" plan.
+Once my identity has been verified i will then sign up for my plan, in this case will be the "Basic Free" plan. The reason for me selecting this plan is due to the primary "bonus" being the ability to build and test real world applications (like hosting a website or running a database) without an upfront financial commitment.
 
 ![Basic_Plan](IMG/Basic_Plan.png)
 
