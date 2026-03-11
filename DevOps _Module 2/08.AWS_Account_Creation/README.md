@@ -8,9 +8,9 @@ This mini project is designed to walk me through the process of creating an Amaz
 
 - Successfully create an AWS account and navigate through the setup process.
 
-- Learn how to access the AWS management consol using newly created account credentials.
+- Learn how to access the AWS management console using newly created account credentials.
 
-- Gain practical experience using AWS servides effectively for future projects or business needs.
+- Gain practical experience using AWS services effectively for future projects or business needs.
 
 ### <u>Setting Up My AWS Account </u>
 
