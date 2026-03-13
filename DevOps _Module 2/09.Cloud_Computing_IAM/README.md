@@ -35,7 +35,7 @@ After logging into my AWS account, i have navigated to the "IAM Dashboard" where
 
 An IAM user is a unique identity within an AWS account that represents a person or service, granting them specific permissions to access and interact with AWS resources under controlled and customsable security policies.
 
-In this instance i will be setting up IAM ussers for a backevend developer named "John" and a data analyst, "Mary", by first determinining their specific access needs.
+In this instance i will be setting up IAM users for a backend developer named "John" and a data analyst, "Mary", by first determinining their specific access needs.
 
 In this case the backend develpper, John requires acces to servers (EC2) to run his code, necessitating an IAM user with policies granting them EC2 access.
 
