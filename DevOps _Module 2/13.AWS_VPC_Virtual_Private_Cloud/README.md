@@ -1,4 +1,4 @@
-# <p align="centre">AWS VPC - Virtual Private Cloud <p>
+# <p align="center">AWS VPC - Virtual Private Cloud <p>
 
 <br>
 
