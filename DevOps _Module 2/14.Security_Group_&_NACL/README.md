@@ -177,3 +177,95 @@ As you can see above, i'm still unable to access the site.
 ### Part 2
 
 Now it's time to work on NACL.
+
+
+1) Firstly i'll navigate to the VPC management console by searching for it in the search bar.
+
+![VPC_Navi](VPC_Navi.png)
+
+<br>
+
+2) Next i will navigate to the "Network ACLs" section in the left side bar and then i will create a network ACL.
+
+![NLC_Create](NLC_Create.png)
+
+<br>
+
+Now that i'm in the creation panel, i'll provide the following information:
+
+- Providing a name for the ACL.
+
+- Choosing the VPC that i created.
+
+- finalising the creation of the ACL Network
+
+![First_ACL](First_ACL.png)
+
+<br>
+
+4) Now i'm going to select the ACL that i just successfully created and navigate to the "inbound" tab. By default this should be denying all traffic from all ports.
+
+![Inbound_Deny](Inbound_Deny.png)
+
+<br>
+
+Similarly the same will be for the outbound rules this should also be denying all trafic on all ports by default.
+
+![Outbound_Deny](IMG/Outbound_Deny.png)
+
+<br>
+
+5) To make changes to my NACL i'll have to go into the "inbound" tab as i previously did and click on the "Edit inbound rules". From here i will click the "Add new rule" option and will have to specify the following:
+
+- Choose rule number.
+
+- Specify the type.
+
+- Select the source.
+
+- Determine whether to allow or deny the traffic.
+
+- Save my changes.
+
+![Inbound_Rules_NACL](IMG/Inbound_Rules_NACL.png)
+
+<br>
+
+At the moment my NACL is currently not associated with any of the subnets in the VPC. So first i'll have to associate it by carrying out the following actions:
+
+- Selecting the NACL i want to associate.
+
+- select "Actions" button
+
+- Choose the "Edit subnet association" option.
+
+- Selecting my public subnet as my instance resides in the public subnet.
+
+- Save my changes.
+
+![Adding_SA](Adding_SA.png)
+
+![Edit_NACL_SA](Edit_NACL_SA.png)
+
+
+Now that I have enabled inbound traffic to my NACL. If i try to access my website again, you will see below i am still unable to access the site. This is because despite permitting inbound traffic in the NACL, the NACL are stateless. They don't automatically allow return traffic. As a result, i need to explicitly configure rules for both inbound and outbound traffic.
+
+<br>
+
+Now i'm going to duplicate the process i did for inbound rules, but for my outbound rules to allow traffic to go out.
+
+![Outbound_NACL](IMG/Outbound_NACL.png)
+
+Now that i successfully have Inbound and Outbound traffic set to "allow" i should in theory be able to access my website site now.
+
+![Inbound_Allow](IMG/Inbound_Allow.png)
+
+![Outbound_Allow](Outbound_Allow.png)
+
+![Website_Reached](IMG/IP_Reached.png)
+
+
+As you can see above, i can now access the site without any issues.
+
+
+
