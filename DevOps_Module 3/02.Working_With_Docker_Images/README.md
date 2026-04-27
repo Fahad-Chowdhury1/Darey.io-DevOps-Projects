@@ -3,13 +3,13 @@
 <br>
 
 ### <u>Introduction with Docker Images</u>
-docker images are the building blocks of containers. They are lightweight, portable, and self sufficient packages that contain everything needed to run a software application, including the code, runtime, libraries, and system tools. Images are created from a set of instructions knock as a 'Dockerfile', while specifies the environment and configuration for the application.
+docker images are the building blocks of containers. They are lightweight, portable, and self sufficient packages that contain everything needed to run a software application, including the code, runtime, libraries, and system tools. Images are created from a set of instructions known as a 'Dockerfile', while specifies the environment and configuration for the application.
 
 <br>
 
 #### Pulling Images from Docker Hub
 
-Docker Hub is a bloud based registry that hosts a vast collection of Docker images. I can pull images from Docker Hub to my local machine using the 'docker pull' command stated in my previous project.
+Docker Hub is a cloud based registry that hosts a vast collection of Docker images. I can pull images from Docker Hub to my local machine using the 'docker pull' command stated in my previous project.
 
 The below command allows me to discover and explore various images hosted on Docker Hub by providing relevant search results. In this case, the output will be similar to this:
 
