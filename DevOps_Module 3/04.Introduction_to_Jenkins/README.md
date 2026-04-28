@@ -83,4 +83,4 @@ Now i need to confirm if Jenkins installed correctly and is up and running with 
 
 ![Jenkins_Console](IMG/Jenkins_Console.png)
 
-
+As this project only requires the installation of jenkins so far and no requirement within the project steps to create a freestyle job, integration with version control systems or build triggers as well as including creating a pipeline job these are all out of scope for this project.
