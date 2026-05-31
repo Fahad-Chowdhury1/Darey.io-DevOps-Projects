@@ -72,7 +72,7 @@ the 'docker run' command is the entry point to execute containers in Docker. It 
 <br>
 
 #### Docker Image: 
-A Docker image is a lightweright, standalone, and executable package that includes everything needed to run a piece of software, including the code, runtime, libraries, and system tools. Images are cannot be modified once created. Changes result in the creation of a new image, like a github repo, your previous image is still in the history.
+A Docker image is a lightweight, standalone, and executable package that includes everything needed to run a piece of software, including the code, runtime, libraries, and system tools. Images are cannot be modified once created. Changes result in the creation of a new image, like a github repo, your previous image is still in the history.
 
 #### Container Lifecycle: 
 Containers are running instances of docker images, they have a lifecycle such as create, start, stop, and delete. Once a container is created from an image, it can be started, stopped and restarted.
